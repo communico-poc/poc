@@ -9,7 +9,7 @@ fetch(endpoint, {
   body: 'id=' + target
 })
 .then(response => {
-    console.log(`Delete request sent for ID ${targetIdToDelete}. Status: ${response.status}`);
+    console.log(`Delete request sent for ID ${target}. Status: ${response.status}`);
     return response.text();
 })
 .then(data => {
